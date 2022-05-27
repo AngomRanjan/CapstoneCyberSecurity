@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* || Typography & Colors */
 
 body {
@@ -39,14 +43,14 @@ h4 { font-weight: 600; }
   line-height: 1.1em;
   letter-spacing: 0.02em;
   margin: 0.2em 0;
-  width: calc(100% - 100px);
-  min-width: 320px;
+  width: 90%;
 }
 
 #main-title {
   background-image: url(images/fiery.jpg);
   background-size: cover;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: #ec5242; /* Fall back for background-clip */
   color: transparent;
 }
@@ -105,9 +109,39 @@ section {
   flex-wrap: wrap;
 }
 
-.header,
+.toolbar {
+  height: 24px;
+  padding: 2px 0;
+  background-color: #272a31;
+}
+
+.tools {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: right;
+  align-items: center;
+  font: 500 0.9em/1.1em "lato", sans-serif;
+  font-weight: 600;
+}
+
+.navs,
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navs {
+  display: flex;
+  width: 60%;
+  min-width: 500px;
+}
+
+.tools a { color: #f7f7f7; }
+
+.header { padding: 20px 0; }
+
 #headline {
-  padding: 20px;
+  justify-content: space-around;
 }
 
 .progs,
@@ -119,6 +153,8 @@ section {
   max-width: 700px;
   flex-wrap: wrap;
 }
+
+#headline > .container-main { margin: 30px 0; }
 
 #main-desc {
   position: relative;
@@ -200,7 +236,6 @@ section {
   top: -62px;
   right: 20px;
   background-position: center 20px;
-  z-index: -1;
 }
 
 /* || ===== Main Program ======  */
@@ -278,6 +313,16 @@ section {
   background-image: url(images/menu.svg);
 }
 
+.navlink {
+  color: #272a31;
+  padding: 6px 8px;
+}
+
+#nav-link-tr-1,
+.navlink:active { color: #ec5242; }
+
+#nav-link-tr-6 { border: 4px solid #ec5242; }
+
 .btn {
   height: 64px;
   width: 72%;
@@ -301,3 +346,48 @@ button:hover {
 }
 
 .dtp { display: none; }
+
+.mob { display: block; }
+
+@media only screen and (min-width: 768px) {
+  /* || Deskstop Responsive */
+
+  .dtp { display: flex; }
+
+  .mob { display: none; }
+
+  #headline {
+    height: calc(100vh - 95px);
+    justify-content: space-around;
+    background-image: url('images/dbg.png');
+  }
+
+  .progs,
+  .container-main {
+    max-width: calc(100vw - 80px);
+    min-width: 700px;
+    width: 80%;
+  }
+
+  #brand {
+    width: 100px;
+    height: 40px;
+  }
+
+  .header {
+    padding: 0;
+    height: 96px;
+    background-color: #fff;
+    gap: 8px;
+  }
+
+  #main-desc {
+    width: 520px;
+    background-color: #f7f7f7;
+  }
+
+  .main-head {
+    font-size: 3.8em;
+    font-weight: 500;
+  }
+}
