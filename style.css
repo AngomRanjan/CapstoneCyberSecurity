@@ -386,6 +386,34 @@ button:hover {
     background-color: #f7f7f7;
   }
 
+  .progs {
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 3px;
+  }
+
+  .pro-item {
+    /* min-width: 10px; */
+    padding: 5px 0;
+    width: 19%;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .topic,
+  .desc {
+    min-width: 90%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  #join {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
   .main-head {
     font-size: 3.8em;
     font-weight: 500;
