@@ -41,3 +41,12 @@ document.getElementById('mobile-menu').addEventListener('click', () => {
 });
 
 // || =========== Menu Ends ==============|| */
+
+document.getElementById('more').addEventListener('click', (event) => {
+  const cards = Array.from(document.getElementsByClassName('dtp-card'));
+  cards.forEach((card) => {
+    card.classList.toggle('col-f');
+  });
+  document.getElementById('more').classList.toggle('btn-less');
+  event.stopPropagation();
+});

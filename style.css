@@ -352,6 +352,8 @@ button:hover {
   background-repeat: no-repeat;
 }
 
+.btn-less { background-image: url('images/less.png'); }
+
 /* || Overlay Menu */
 
 .no-scroll { overflow: hidden; }
@@ -399,6 +401,7 @@ button:hover {
 
 /* || Overlay Ends */
 
+.col-f,
 .dtp { display: none; }
 
 .mob { display: block; }
@@ -406,6 +409,7 @@ button:hover {
 @media only screen and (min-width: 768px) {
   /* || Deskstop Responsive */
 
+  .col-f,
   .dtp { display: flex; }
 
   .mob { display: none; }
