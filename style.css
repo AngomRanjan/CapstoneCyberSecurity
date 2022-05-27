@@ -414,6 +414,20 @@ button:hover {
     text-decoration: underline;
   }
 
+  #cards-container {
+    justify-content: space-between;
+  }
+
+  .cards {
+    width: 48%;
+    gap: 0;
+  }
+
+  .partners {
+    min-width: none;
+    width: auto;
+  }
+
   .main-head {
     font-size: 3.8em;
     font-weight: 500;
