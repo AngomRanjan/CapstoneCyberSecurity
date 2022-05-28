@@ -418,6 +418,8 @@ button:hover {
     height: calc(100vh - 95px);
     justify-content: space-around;
     background-image: url('images/dbg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .progs,
@@ -484,6 +486,10 @@ button:hover {
   .partners {
     min-width: none;
     width: auto;
+  }
+
+  #host-ph {
+    justify-content: left;
   }
 
   .main-head {
