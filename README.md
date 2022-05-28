@@ -1,19 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Profile
+# Virtual Defense Global Summit 2022
 
-> This project is a part of here goes project description
-
-
+> My first Capstone Project under Microverse. In the Project I have created a site for an Imaginary cyber security company, Virtual Defense based on the design of creative commons global summit 2015
+designed by Cindy Shin in Behance. Here I created only two pages Home page and About Page using HTML, CSS and Javascript.
 
 ## Built With
 
 - HTML
 - CSS
+-Javascript
 
 ## Live Demo
+[source code](https://github.com/AngomRanjan/CapstoneCyberSecurity.git)
 
-[Live Demo Link](https://angomranjan.github.io/RepoName/)
+[Live Demo Link](https://angomranjan.github.io/CapstoneCyberSecurity/)
 
 ## Authors
 
@@ -27,14 +28,14 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/AngomRanjan/CapstoneCyberSecurity/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Cindy Shin in Behance. For the Design Template
 - Microverse Team
 - My Family
 
