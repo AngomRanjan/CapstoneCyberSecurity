@@ -418,7 +418,7 @@ button:hover {
     height: calc(100vh - 95px);
     justify-content: space-around;
     background-image: url('images/dbg.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
