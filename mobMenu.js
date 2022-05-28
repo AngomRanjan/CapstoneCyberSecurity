@@ -23,19 +23,17 @@ function addItem(item, itemId, iTarget, iText) {
 function hideMobMenu() {
   mobMenu.innerHTML = '';
   document.body.removeChild(mobMenu);
-  document.body.classList.toggle('no-scroll');
 }
 
 document.getElementById('mobile-menu').addEventListener('click', () => {
   mobMenu.appendChild(addItem('div'));
-  mobMenu.appendChild(addItem('a', 'link1', '#', 'About'));
+  mobMenu.appendChild(addItem('a', 'link1', 'index.html', 'Home'));
   mobMenu.appendChild(addItem('a', 'link2', '#', 'Program'));
   mobMenu.appendChild(addItem('a', 'link3', '#', 'Join'));
   mobMenu.appendChild(addItem('a', 'link4', '#', 'Sponsor'));
   mobMenu.appendChild(addItem('a', 'link5', '#', 'News'));
   mobMenu.appendChild(addItem('a', 'link6', '#', 'VD Campaign'));
   document.body.appendChild(mobMenu);
-  document.body.classList.toggle('no-scroll');
   const linkss = Array.from(document.getElementsByClassName('dyn'));
   linkss.forEach((btn) => {
     btn.addEventListener('click', hideMobMenu);

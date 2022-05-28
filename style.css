@@ -142,6 +142,10 @@ section {
 
 #headline {
   justify-content: space-around;
+  background-image: url('images/mobBgBHome.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .progs,
@@ -156,11 +160,13 @@ section {
 
 #headline > .container-main { margin: 30px 0; }
 
+#abt-main-desc,
 #main-desc {
   position: relative;
   border: 2px solid #fff;
   padding: 20px;
   margin: 20px 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
 }
 
 .cards {
@@ -271,6 +277,7 @@ hr {
   width: 100%;
 }
 
+#abt-partners-ph,
 #partners-ph {
   background-color: #272a31;
   padding: 20px;
@@ -356,8 +363,6 @@ button:hover {
 
 /* || Overlay Menu */
 
-.no-scroll { overflow: hidden; }
-
 .overlay-container {
   position: fixed;
   top: 0;
@@ -401,8 +406,87 @@ button:hover {
 
 /* || Overlay Ends */
 
+/* || ==== About Page ========= || */
+
+.al-center { text-align: center; }
+
+.cnt-abt {
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+#desc-pat-tr-2 {
+  top: -62px;
+  left: 0;
+  background-position: center 35px;
+}
+
+.about-head {
+  font-size: 1.7em;
+  line-height: 1.1em;
+  letter-spacing: 0.01em;
+  margin: 8px 0;
+}
+
+.abt-sec,
+.abt-desc { background-color: #fff; }
+
+.abt-sec {
+  padding: 30px 0;
+}
+
+.abt-logo {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.summit-cnt {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#summit-1 {
+  background-image: url('images/summit1.jpg');
+}
+
+#summit-2 {
+  background-image: url('images/summit2.jpg');
+}
+
+.summits {
+  background-color: rgba(236, 82, 66);
+  background-blend-mode: multiply;
+  width: 90%;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brand-logo {
+  border: 2px solid #d3d3d3;
+  margin: 20px 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+/* || ==== About Page ========= || */
+
 .col-f,
 .dtp { display: none; }
+
+.aboutPage {
+  background-image: url('images/aboutbg.png');
+  background-position: 10px 72px;
+  background-size: contain;
+}
 
 .mob { display: block; }
 
@@ -423,6 +507,7 @@ button:hover {
   }
 
   .progs,
+  .abt-desc,
   .container-main {
     max-width: calc(100vw - 80px);
     min-width: 700px;
@@ -495,5 +580,23 @@ button:hover {
   .main-head {
     font-size: 3.8em;
     font-weight: 500;
+  }
+
+  /* ======about ==== */
+
+  .summits {
+    width: 40%;
+    height: 150px;
+  }
+
+  .bg-dark {
+    background-color: #272a31;
+    color: #fff;
+  }
+
+  #abt-partners-ph { display: none; }
+
+  .cnt-abt {
+    align-items: center;
   }
 }
