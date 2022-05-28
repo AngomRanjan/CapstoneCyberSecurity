@@ -309,7 +309,7 @@ hr {
 
 #host-ph {
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
   gap: 20px;
@@ -575,10 +575,6 @@ button:hover {
   .partners {
     min-width: none;
     width: auto;
-  }
-
-  #host-ph {
-    justify-content: left;
   }
 
   .main-head {

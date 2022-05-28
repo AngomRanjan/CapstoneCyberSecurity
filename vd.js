@@ -22,11 +22,11 @@ const arrCards = [
 ];
 
 function compileCards(card) {
-  const divCard = document.createElement('div');
-  divCard.className = 'cards';
-  if (card.no > 2) divCard.classList.add('dtp-card', 'col-f');
-  divCard.id = `card-${card.no}`;
-  divCard.innerHTML = `<div class="img-ph">
+  const article = document.createElement('article');
+  article.className = 'cards';
+  if (card.no > 2) article.classList.add('dtp-card', 'col-f');
+  article.id = `card-${card.no}`;
+  article.innerHTML = `<div class="img-ph">
   <img src="images/img-c${card.no}.png" alt="feature-speaker-1" class="card-img" id="img-c1">
 </div>
 <div class="card-details" id="card${card.no}">
@@ -38,7 +38,7 @@ function compileCards(card) {
   <p class="fs-intro" id="intro-fs${card.no}">${card.details}
   </p>
 </div>`;
-  return divCard;
+  return article;
 }
 
 const cardsContainer = document.createElement('div'); // 3rd child of 'feature-speaker' and parent to cards
