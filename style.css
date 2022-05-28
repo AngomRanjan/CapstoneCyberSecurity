@@ -319,6 +319,10 @@ hr {
 
 .fw { width: 100%; }
 
+.pro-item:hover {
+  border: 1px solid #d3d3d3;
+}
+
 .menu {
   width: 42px;
   height: 42px;
