@@ -32,7 +32,7 @@ Feel free to check the [issues page](https://github.com/AngomRanjan/CapstoneCybe
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a [⭐️](https://github.com/AngomRanjan/CapstoneCyberSecurity/stargazers) if you like this project!
 
 ## Acknowledgments
 - Cindy Shin in Behance. For the Design Template
