@@ -2,7 +2,7 @@
 
 # Virtual Defense Global Summit 2022
 
-> My first Capstone Project under Microverse. In the Project I have created a site for an Imaginary cyber security company, Virtual Defense based on the design of creative commons global summit 2015
+> In this Project I have created a site for an Imaginary cyber security company, Virtual Defense based on the design of creative commons global summit 2015
 designed by Cindy Shin in Behance. Here I created only two pages Home page and About Page using HTML, CSS and Javascript.
 
 ## Built With
